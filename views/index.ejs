@@ -1,0 +1,632 @@
+<%include ./partials/header %>
+
+<!-- Start Slider Area -->
+<div id="home" class="slider-area">
+  <div class="bend niceties preview-2">
+    <div id="ensign-nivoslider" class="slides">
+      <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+      <img src="img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
+      <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+    </div>
+
+    <!-- direction 1 -->
+    <div id="slider-direction-1" class="slider-direction slider-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="slider-content">
+              <!-- layer 1 -->
+              <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                <h2 class="title1">Want to grow your network?</h2>
+              </div>
+              <!-- layer 2 -->
+              <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                <h1 class="title2">We're here to help you!</h1>
+              </div>
+              <!-- layer 3 -->
+              <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <a class="ready-btn right-btn page-scroll" href="/feeds/new">create new post</a>
+                <a class="ready-btn page-scroll" href="#about">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- direction 2 -->
+    <div id="slider-direction-2" class="slider-direction slider-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="slider-content text-center">
+              <!-- layer 1 -->
+              <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <h2 class="title1">Connect with just one click.</h2>
+              </div>
+              <!-- layer 2 -->
+              <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                <h1 class="title2">Sign up & Connect today!</h1>
+              </div>
+              <!-- layer 3 -->
+              <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <a class="ready-btn right-btn page-scroll" href="/feeds/new">create new post</a>
+                <a class="ready-btn page-scroll" href="#about">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- direction 3 -->
+    <div id="slider-direction-3" class="slider-direction slider-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="slider-content">
+              <!-- layer 1 -->
+              <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <h2 class="title1">Networking easier than ever.</h2>
+              </div>
+              <!-- layer 2 -->
+              <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                <h1 class="title2">Making networking hassel free and saving your valuable time.</h1>
+              </div>
+              <!-- layer 3 -->
+              <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <a class="ready-btn right-btn page-scroll" href="/feeds/new">create new post</a>
+                <a class="ready-btn page-scroll" href="#about">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Slider Area -->
+
+<!-- Original area -->
+<div class="about-area area-padding">
+  <div class="container-fluid">
+    <div class="section-headline text-center">
+      <h2>All Posts</h2>
+    </div>
+    <div id="feeds" class="row text-center">
+      <% feeds.forEach(function(feed){%>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail all">
+          <img src="<%= feed.image %>" alt="<%= feed.name%>" />
+          <div class="caption">
+            <h4><%= feed.name %></h4>
+            <p><%= feed.description.substring(0,100) %></p>
+            <p>
+              <a class="btn btn-large center-block btn-primary arrow" href="/feeds/<%= feed._id %>">More Info</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <%}); %>
+    </div>
+  </div>
+</div>
+<!-- Original area end-->
+
+<!-- Start About area -->
+<div id="about" class="about-area area-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>About IConnect </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- single-well start-->
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="well-left">
+        <div class="single-well">
+          <a href="#">
+            <img src="img/about/1.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- single-well end-->
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="well-middle">
+          <div class="single-well">
+            <a href="#">
+              <h4 class="sec-head">Grow Your Network With iConnect</h4>
+            </a>
+            <p>
+              iConnect Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nostrum officia adipisci beatae
+              deleniti impedit est eius hic in, totam tempora illo dolorem magni omnis incidunt. Illo vitae voluptatem
+              quasi?
+            </p>
+            <ul>
+              <li>
+                <i class="fa fa-check"></i> Easy process for registration and admission.
+              </li>
+              <li>
+                <i class="fa fa-check"></i> Manage grades and can create grade book.
+              </li>
+              <li>
+                <i class="fa fa-check"></i> Automated Time Table Generated.
+
+              </li>
+              <li>
+                <i class="fa fa-check"></i> Maintains the staff and student attendance records.
+              </li>
+              <li>
+                <i class="fa fa-check"></i> Easy teacher parents communication.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End col-->
+    </div>
+  </div>
+</div>
+<!-- End About area -->
+
+<!-- our-skill-area start -->
+<div class="our-skill-area fix hidden-sm">
+  <div class="test-overly"></div>
+  <div class="skill-bg area-padding-2">
+    <div class="container">
+      <!-- section-heading end -->
+      <div class="row">
+        <div class="skill-text">
+          <!-- single-skill start -->
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="single-skill">
+              <div class="progress-circular">
+                <input type="text" class="knob" value="0" data-rel="84" data-linecap="round" data-width="175"
+                  data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                <h3 class="progress-h4">Companies</h3>
+              </div>
+            </div>
+          </div>
+          <!-- single-skill end -->
+          <!-- single-skill start -->
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="single-skill">
+              <div class="progress-circular">
+                <input type="text" class="knob" value="0" data-rel="91" data-linecap="round" data-width="175"
+                  data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                <h3 class="progress-h4">Networking</h3>
+              </div>
+            </div>
+          </div>
+          <!-- single-skill end -->
+          <!-- single-skill start -->
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="single-skill">
+              <div class="progress-circular">
+                <input type="text" class="knob" value="0" data-rel="75" data-linecap="round" data-width="175"
+                  data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                <h3 class="progress-h4">Job Postings</h3>
+              </div>
+            </div>
+          </div>
+          <!-- single-skill end -->
+          <!-- single-skill start -->
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="single-skill">
+              <div class="progress-circular">
+                <input type="text" class="knob" value="0" data-rel="65" data-linecap="round" data-width="175"
+                  data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                <h3 class="progress-h4">Community</h3>
+              </div>
+            </div>
+          </div>
+          <!-- single-skill end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- our-skill-area end -->
+
+<!-- Faq area start -->
+<div class="faq-area area-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>Faq Question</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="faq-details">
+          <div class="panel-group" id="accordion">
+            <!-- Panel Default -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                  <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check1">
+                    <span class="acc-icons"></span>Consectetur adipisicing elit.
+                  </a>
+                </h4>
+              </div>
+              <div id="check1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <p>
+                    Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas
+                    mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus
+                    recusandae vero
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Panel Default -->
+            <!-- Panel Default -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#check2">
+                    <span class="acc-icons"></span> Dolore magnam quidem repellat.
+                  </a>
+                </h4>
+              </div>
+              <div id="check2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>
+                    Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas
+                    mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus
+                    recusandae vero aperiam sint nulla beatae eos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Panel Default -->
+            <!-- Panel Default -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#check3">
+                    <span class="acc-icons"></span>Redug Lefes dolor sit.
+                  </a>
+                </h4>
+              </div>
+              <div id="check3" class="panel-collapse collapse ">
+                <div class="panel-body">
+                  <p>
+                    Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas
+                    mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus
+                    recusandae vero aperiam sint nulla beatae eos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Panel Default -->
+            <!-- Panel Default -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="check-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#check4">
+                    <span class="acc-icons"></span>Maiores alias accusamus
+                  </a>
+                </h4>
+              </div>
+              <div id="check4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>
+                    Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas
+                    mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus
+                    recusandae vero aperiam sint nulla beatae eos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Panel Default -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="tab-menu">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active">
+              <a href="#p-view-1" role="tab" data-toggle="tab">Project</a>
+            </li>
+            <li>
+              <a href="#p-view-2" role="tab" data-toggle="tab">Planning</a>
+            </li>
+            <li>
+              <a href="#p-view-3" role="tab" data-toggle="tab">Success</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="p-view-1">
+            <div class="tab-inner">
+              <div class="event-content head-team">
+                <h4>Project</h4>
+                <p>
+                  Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus
+                  adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut,
+                  laborum sequi.
+                </p>
+                <p>
+                  voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto
+                  ducimus, doloribus fuga itaque omnis placeat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="p-view-2">
+            <div class="tab-inner">
+              <div class="event-content head-team">
+                <h4>Planning</h4>
+                <p>
+                  voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto
+                  ducimus, doloribus fuga itaque omnis.
+                </p>
+                <p>
+                  Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus
+                  adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="p-view-3">
+            <div class="tab-inner">
+              <div class="event-content head-team">
+                <h4>Success</h4>
+                <p>
+                  voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto
+                  ducimus, doloribus fuga itaque omnis placeat.
+                </p>
+                <p>
+                  voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto
+                  ducimus, doloribus fuga itaque omnis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Row -->
+  </div>
+</div>
+<!-- End Faq Area -->
+
+<!-- Start reviews Area -->
+<div class="reviews-area hidden-xs">
+  <div class="work-us">
+    <div class="work-left-text">
+      <a href="#">
+        <img src="img/about/2.jpg" alt="">
+      </a>
+    </div>
+    <div class="work-right-text text-center">
+      <h2>Use iConnect</h2>
+      <h5>Authentic & hassel free networking.</h5>
+      <a href="/register" class="ready-btn">Sign Up</a>
+    </div>
+  </div>
+</div>
+<!-- End reviews Area -->
+
+<!-- Start portfolio Area -->
+<div id="portfolio" class="portfolio-area area-padding fix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>Our Portfolio</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Start Portfolio -page -->
+      <div class="awesome-project-1 fix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="awesome-menu ">
+            <ul class="project-menu">
+              <li>
+                <a href="#" class="active" data-filter="*">All</a>
+              </li>
+              <li>
+                <a href="#" data-filter=".development">Development</a>
+              </li>
+              <li>
+                <a href="#" data-filter=".design">Design</a>
+              </li>
+              <li>
+                <a href="#" data-filter=".photo">Photoshop</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="awesome-project-content">
+        <!-- single-awesome-project start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 design development">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="img/portfolio/1.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="venobox" data-gall="myGallery" href="img/portfolio/1.jpg">
+                    <h4>Business City</h4>
+                    <span>Web Development</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single-awesome-project end -->
+        <!-- single-awesome-project start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 photo">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="img/portfolio/2.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="venobox" data-gall="myGallery" href="img/portfolio/2.jpg">
+                    <h4>Blue Sea</h4>
+                    <span>Photosho</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single-awesome-project end -->
+        <!-- single-awesome-project start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 design">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="img/portfolio/3.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="venobox" data-gall="myGallery" href="img/portfolio/3.jpg">
+                    <h4>Beautiful Nature</h4>
+                    <span>Web Design</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single-awesome-project end -->
+        <!-- single-awesome-project start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 photo development">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="img/portfolio/4.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="venobox" data-gall="myGallery" href="img/portfolio/4.jpg">
+                    <h4>Creative Team</h4>
+                    <span>Web design</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single-awesome-project end -->
+        <!-- single-awesome-project start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 development">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="img/portfolio/5.jpg" alt="" /></a>
+              <div class="add-actions text-center text-center">
+                <div class="project-dec">
+                  <a class="venobox" data-gall="myGallery" href="img/portfolio/5.jpg">
+                    <h4>Beautiful Flower</h4>
+                    <span>Web Development</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single-awesome-project end -->
+        <!-- single-awesome-project start -->
+        <div class="col-md-4 col-sm-4 col-xs-12 design photo">
+          <div class="single-awesome-project">
+            <div class="awesome-img">
+              <a href="#"><img src="img/portfolio/6.jpg" alt="" /></a>
+              <div class="add-actions text-center">
+                <div class="project-dec">
+                  <a class="venobox" data-gall="myGallery" href="img/portfolio/6.jpg">
+                    <h4>Night Hill</h4>
+                    <span>Photoshop</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single-awesome-project end -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- awesome-portfolio end -->
+
+<!-- Start Testimonials -->
+<div class="testimonials-area">
+  <div class="testi-inner area-padding">
+    <div class="testi-overly"></div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <!-- Start testimonials Start -->
+          <div class="testimonial-content text-center">
+            <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
+            <!-- start testimonial carousel -->
+            <div class="testimonial-carousel">
+              <div class="single-testi">
+                <div class="testi-text">
+                  <p>
+                    Instead of better glasses, your network gives you better eyes.</p>
+                  <h6>Ronald Burt</h6>
+                </div>
+              </div>
+              <!-- End single item -->
+              <div class="single-testi">
+                <div class="testi-text">
+                  <p>
+                    I'm convinced that about half of what separates successful entrepreneurs from the non-successful
+                    ones is pure perseverance.</p>
+                  <h6>Steve Jobs</h6>
+                </div>
+              </div>
+              <!-- End single item -->
+              <div class="single-testi">
+                <div class="testi-text">
+                  <p>
+                    Networking is marketing. Marketing yourself, your uniqueness, what you stand for.</p>
+                  <h6>Christine Comaford-Lynch</h6>
+                </div>
+              </div>
+              <!-- End single item -->
+            </div>
+          </div>
+          <!-- End testimonials end -->
+        </div>
+        <!-- End Right Feature -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Testimonials -->
+
+<!-- Start Suscrive Area -->
+<div class="suscribe-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+        <div class="suscribe-text text-center">
+          <h3>Welcome to iConnect!</h3>
+          <a class="sus-btn" href="/register">sign up now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Suscrive Area -->
+
+<!--Start Google Map -->
+<div cla="col-md-6 col-sm-6 col-xs-12">
+  <!-- Start Map -->
+  <iframe src="https://maps.google.com/maps?q=igdtuw&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="380"
+    frameborder="0" style="border:0" allowfullscreen></iframe>
+  <!--End Map -->
+</div>
+<!-- End Google Map -->
+<%include partials/footer %>

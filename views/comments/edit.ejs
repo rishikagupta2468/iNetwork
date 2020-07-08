@@ -1,0 +1,17 @@
+<%include ./../partials/header %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <h3 class="text-center">Edit <i class="fa fa-comments-o"></i></h3>
+      <form action="/feeds/<%= feed_id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+          <div class="form-group">
+            <input type="text" name="comment[text]" value="<%= comment.text %>" class="form-control">
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn btn-success btn-block">Submit</button>
+          </div>
+      </form>
+      <a style="text-align:center" href="/feeds"><span class="text-center glyphicon glyphicon-chevron-left"></span>Go Back</a>
+    </div>
+  </div>
+<%include ./../partials/footer %>
